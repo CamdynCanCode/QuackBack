@@ -220,6 +220,7 @@
     });
 
     document.addEventListener('mousedown', function(event) {
+        event.preventDefault();
         if (event.button === 0) { // 0 represents the left mouse button
             pausePlayCurrentVideo();
   }
