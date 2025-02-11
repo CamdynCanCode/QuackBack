@@ -168,6 +168,8 @@
       video.classList.add("post-video");
       video.setAttribute("autoplay", "");
       video.setAttribute("loop", "");
+      video.setAttribute("playsinline", "");
+      video.setAttribute("webkit-playsinline", "");
 
       // Use (postCounter - 1) so that the first dynamic post gets movie2.mp4, etc.
       const videoSource = document.createElement("source");
