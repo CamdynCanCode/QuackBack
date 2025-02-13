@@ -22,7 +22,7 @@
     // Fetch videos from the backend
     async function fetchVideos() {
       try {
-        const response = await fetch("http://192.168.4.224:5000/videos");
+        const response = await fetch("https://192.168.4.224:5000/videos");
         const data = await response.json();
         videos = data;
         loadMoreVideos();
@@ -61,7 +61,7 @@
       });
 
       const source = document.createElement("source");
-      source.src = `http://192.168.4.224:5000/uploads/${videoFile}`;
+      source.src = `https://192.168.4.224:5000/uploads/${videoFile}`;
       source.type = "video/mp4";
       videoElem.appendChild(source);
 
